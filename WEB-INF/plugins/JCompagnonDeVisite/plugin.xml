@@ -107,6 +107,9 @@
 	  </templates>
   </types>
  -->
+ <types>
+    <type name="PointDinteret" />
+ </types>
   <!-- ============================== Workflows =========================== -->
   <!--                                                                      -->
   <!-- workflows         A list of <dependency>.                            -->
