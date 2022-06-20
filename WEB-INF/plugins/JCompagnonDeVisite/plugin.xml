@@ -109,6 +109,7 @@
  -->
  <types>
     <type name="PointDinteret" />
+    <type name="Oeuvre" />
  </types>
   <!-- ============================== Workflows =========================== -->
   <!--                                                                      -->
