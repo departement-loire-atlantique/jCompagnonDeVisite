@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type name="Parcours" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="true" workflowTab="true" advancedTab="true" database="true" hbm="true" revision="true">
+  <label xml:lang="fr">Parcours</label>
+  <title ml="true">
+    <label xml:lang="en">Title</label>
+    <label xml:lang="fr">Titre</label>
+  </title>
+  <fields>
+    <field name="description" editor="wysiwyg" required="true" type="String" searchable="true" abstract="true" wysiwygConfigurationId="default" ml="true">
+      <label xml:lang="en">Description</label>
+      <label xml:lang="fr">Description</label>
+    </field>
+    <field name="visuel" editor="image" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
+      <label xml:lang="fr">Visuel</label>
+    </field>
+    <field name="thematique" editor="category" required="true" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="c_5007">
+      <label xml:lang="fr">Thématique</label>
+    </field>
+    <field name="duree" editor="duration" required="true" compactDisplay="false" type="long" default="0">
+      <label xml:lang="fr">Durée</label>
+    </field>
+    <field name="public1" editor="textfield" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true" html="false" checkHtml="true">
+      <label xml:lang="fr">Public</label>
+    </field>
+    <field name="plan" editor="image" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
+      <label xml:lang="fr">Plan</label>
+    </field>
+    <field name="etapes" editor="link" required="true" compactDisplay="false" type="generated.ListeDeContenus" parent="false">
+      <label xml:lang="fr">Etapes</label>
+    </field>
+  </fields>
+</type>
+
