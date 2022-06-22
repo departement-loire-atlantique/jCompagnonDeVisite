@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<type name="Oeuvre" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="true" workflowTab="true" advancedTab="true" database="true" hbm="true" revision="true">
-  <label xml:lang="fr">Oeuvre</label>
+<type name="OeuvreExplore" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="true" workflowTab="true" advancedTab="true" database="true" hbm="true" revision="true">
   <title ml="true">
-    <label xml:lang="en">Title</label>
     <label xml:lang="fr">Titre</label>
+    <label xml:lang="en">Title</label>
   </title>
   <fields>
     <field name="description" editor="textfield" required="false" type="String" searchable="true" ml="true" compactDisplay="false" descriptionType="tooltip" html="false" checkHtml="true" inline="true" abstract="true" truncate="400">
-      <label xml:lang="en">Description</label>
       <label xml:lang="fr">Description</label>
+      <label xml:lang="en">Description</label>
     </field>
     <field name="diaporama" editor="link" required="false" compactDisplay="false" type="generated.Carousel" parent="false">
       <label xml:lang="fr">Diaporama</label>
@@ -19,6 +18,10 @@
     <field name="fichierSonDaide" editor="url" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" openWindow="false">
       <label xml:lang="fr">Fichier son d'aide</label>
     </field>
+    <field name="vignette" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
+      <label xml:lang="fr">Vignette</label>
+    </field>
   </fields>
+  <label xml:lang="fr">Oeuvre Explore</label>
 </type>
 
