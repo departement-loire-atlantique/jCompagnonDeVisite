@@ -16,3 +16,5 @@
 
 # LESS
 # channel.less.plugins/{Name}/css/plugin.css:    plugins/{Name}/css/plugin.less
+
+rest.data.require-logged-member: false
