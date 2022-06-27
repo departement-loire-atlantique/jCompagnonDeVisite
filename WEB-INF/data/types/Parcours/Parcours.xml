@@ -13,19 +13,27 @@
     <field name="visuel" editor="image" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Visuel</label>
     </field>
-    <field name="thematique" editor="category" required="true" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="c_5007">
-      <label xml:lang="fr">Thématique</label>
-    </field>
-    <field name="duree" editor="duration" required="true" compactDisplay="false" type="long" default="0">
-      <label xml:lang="fr">Durée</label>
-    </field>
-    <field name="public1" editor="textfield" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true" html="false" checkHtml="true">
-      <label xml:lang="fr">Public</label>
-    </field>
     <field name="plan" editor="image" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Plan</label>
     </field>
-    <field name="etapes" editor="link" required="true" compactDisplay="false" type="generated.ListeDeContenus" parent="false">
+    <field name="jexplore" editor="boolean" required="false" compactDisplay="false" type="boolean" default="false" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
+      <label xml:lang="fr">J'Explore</label>
+      <description xml:lang="fr">&lt;div class="wysiwyg"&gt;&lt;p&gt;parcours j'explore de l'exposition permanente&lt;/p&gt;&lt;/div&gt;</description>
+      <onLabel xml:lang="en">Yes</onLabel>
+      <onLabel xml:lang="fr">Oui</onLabel>
+      <offLabel xml:lang="en">No</offLabel>
+      <offLabel xml:lang="fr">Non</offLabel>
+    </field>
+    <field name="thematique" editor="category" required="false" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="j_3" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true" displayRoot="false">
+      <label xml:lang="fr">Thématique</label>
+    </field>
+    <field name="duree" editor="duration" required="false" compactDisplay="false" type="long" default="0" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
+      <label xml:lang="fr">Durée</label>
+    </field>
+    <field name="public1" editor="textfield" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" html="false" checkHtml="true" descriptionType="tooltip">
+      <label xml:lang="fr">Public</label>
+    </field>
+    <field name="etapes" editor="link" required="false" compactDisplay="false" type="generated.ListeDeContenus" parent="false" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
       <label xml:lang="fr">Etapes</label>
     </field>
   </fields>

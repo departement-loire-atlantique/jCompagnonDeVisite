@@ -143,6 +143,9 @@
     <java package="com.example.jcmsplugin.jcompagnondevisite" />
   </java-classes>
  -->
+   <java-classes>
+       <java package="fr.digiwin.module.CompagnonDeVisite" />
+   </java-classes>
   <!-- ========================== Plugin Components ======================= -->
   <!--                                                                      -->
   <!-- Plugin Components are Java classes implementing the PluginComponent  -->
@@ -199,6 +202,9 @@
     <jsynclistener         class="com.example.jcmsplugin.jcompagnondevisite.JCompagnonDeVisiteJSyncListener" />
   </plugincomponents>
 -->
+ <plugincomponents>
+    <datacontroller class="fr.digiwin.module.CompagnonDeVisite.dataControllers.JExploreDataController" types="Parcours" />
+ </plugincomponents>
   <!-- ============================= Hibernate ============================ -->
   <!--                                                                      -->
   <!-- Plugin's Hibernate mapping                                           -->
