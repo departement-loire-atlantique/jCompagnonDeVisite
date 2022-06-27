@@ -13,6 +13,9 @@
     <field name="visuel" editor="image" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Visuel</label>
     </field>
+    <field name="thematique" editor="category" required="true" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="j_3" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true" displayRoot="false">
+      <label xml:lang="fr">Thématique</label>
+    </field>
     <field name="plan" editor="image" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Plan</label>
     </field>
@@ -23,9 +26,6 @@
       <onLabel xml:lang="fr">Oui</onLabel>
       <offLabel xml:lang="en">No</offLabel>
       <offLabel xml:lang="fr">Non</offLabel>
-    </field>
-    <field name="thematique" editor="category" required="false" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="j_3" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true" displayRoot="false">
-      <label xml:lang="fr">Thématique</label>
     </field>
     <field name="duree" editor="duration" required="false" compactDisplay="false" type="long" default="0" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
       <label xml:lang="fr">Durée</label>

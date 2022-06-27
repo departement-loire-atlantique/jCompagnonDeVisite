@@ -443,6 +443,7 @@
     <directory path="css" />
     <directory path="docs" />
     <directory path="jsp" />
+    <directory path="types" />
     <!--    
     <directory path="images" />
     -->
