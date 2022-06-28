@@ -37,10 +37,8 @@ public class JExploreDataController extends BasicDataController implements Plugi
    */
   @Override
   public void processFieldStatusMap(Data data, Member mbr, Map map) {
-    LOGGER.debug(map);
     Parcours pub = (Parcours)data;
     updateFieldStatusMap(map, "etapes", setStatus(pub));
-    updateFieldStatusMap(map, "thematique", setStatus(pub));
     updateFieldStatusMap(map, "duree", setStatus(pub));
     updateFieldStatusMap(map, "public1", setStatus(pub));
   }
@@ -73,9 +71,7 @@ public class JExploreDataController extends BasicDataController implements Plugi
         }
       }
     } else {
-      if (pub.getFirstThematique(CHANNEL.getCurrentLoggedMember()) == null) {
-        return new ControllerStatus(CHANNEL.getCurrentJcmsContext().glp("msg.edit.empty-field", "Thématique"));
-      } else if (pub.getDuree() == 0L ) {
+      if (pub.getDuree() == 0L ) {
         return new ControllerStatus(CHANNEL.getCurrentJcmsContext().glp("msg.edit.lesser-number", "Durée", "0"));
       } else if (pub.getPublic1().length() == 0 ) {
         return new ControllerStatus(CHANNEL.getCurrentJcmsContext().glp("msg.edit.empty-field", "Public"));
@@ -83,10 +79,7 @@ public class JExploreDataController extends BasicDataController implements Plugi
         return new ControllerStatus(CHANNEL.getCurrentJcmsContext().glp("msg.edit.empty-field", "Etapes"));
       }
         
-    }
-    
+    }    
     return ControllerStatus.OK;
-
   }
-
 }
