@@ -21,6 +21,9 @@
     <field name="vignette" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Vignette</label>
     </field>
+    <field name="indications" editor="link" required="false" compactDisplay="false" type="generated.ListeDeContenus" parent="false">
+      <label xml:lang="fr">Indications</label>
+    </field>
   </fields>
   <label xml:lang="fr">Oeuvre Explore</label>
 </type>

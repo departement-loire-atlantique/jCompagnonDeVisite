@@ -114,6 +114,7 @@
     <type name="PointDinteret" />
     <type name="Parcours" />
     <type name="OeuvreExplore" />
+    <type name="Indication" />
  </types>
   <!-- ============================== Workflows =========================== -->
   <!--                                                                      -->

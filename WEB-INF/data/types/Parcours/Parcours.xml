@@ -36,6 +36,9 @@
     <field name="etapes" editor="link" required="false" compactDisplay="false" type="generated.ListeDeContenus" parent="false" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
       <label xml:lang="fr">Etapes</label>
     </field>
+    <field name="ordre" editor="int" required="false" compactDisplay="false" type="int" default="0">
+      <label xml:lang="fr">Ordre</label>
+    </field>
   </fields>
 </type>
 
