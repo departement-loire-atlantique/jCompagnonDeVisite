@@ -17,8 +17,8 @@
     </a>
 </p>
 
-## Module de backend Compagnon de visite Musée Dobrée
-Module personnalisé pour le backend de l'application  offrant des services et des opérations d'échanges de données pour le frontend de l'application
+## Module JPlatform pour le backend de l'application Compagnon de visite Musée Dobrée
+Ce module personnalisé offre des services et des opérations d'échanges de données pour le frontend de l'application
 
 
 ## TODO
