@@ -16,7 +16,9 @@
     <img src="https://sonarcloud.io/api/project_badges/measure?project=departement-loire-atlantique_jCompagnonMuseeDobree&metric=vulnerabilities" />
     </a>
 </p>
-Module personnalisé pour le backend de l'application #Compagnon de visite Musée Dobrée# offrant des services et des opérations d'échanges de données pour le frontend de l'application
+
+## Module de backend Compagnon de visite Musée Dobrée
+Module personnalisé pour le backend de l'application  offrant des services et des opérations d'échanges de données pour le frontend de l'application
 
 
 ## TODO
