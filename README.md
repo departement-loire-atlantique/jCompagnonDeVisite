@@ -1,6 +1,6 @@
 <p>
-  <a href="https://app.travis-ci.com/github/departement-loire-atlantique/jCompagnonMuseeDobree">
-    <img src="https://api.travis-ci.com/departement-loire-atlantique/jCompagnonMuseeDobree.svg?branch=master" />
+  <a href="https://app.travis-ci.com/github/departement-loire-atlantique/jCompagnonDeVisite">
+    <img src="https://api.travis-ci.com/departement-loire-atlantique/jCompagnonDeVisite.svg?branch=master" />
   </a>
   <a href="https://sonarcloud.io/organizations/departement-loire-atlantique">
     <img src="https://sonarcloud.io/api/project_badges/measure?project=departement-loire-atlantique_jCompagnonMuseeDobree&metric=ncloc" />
@@ -17,7 +17,7 @@
     </a>
 </p>
 
-## Module JPlatform pour le backend de l'application Compagnon de visite Musée Dobrée
+## Module JPlatform pour le backend de l'application Compagnon de visite
 Ce module personnalisé offre des services et des opérations d'échanges de données pour le frontend de l'application
 
 
