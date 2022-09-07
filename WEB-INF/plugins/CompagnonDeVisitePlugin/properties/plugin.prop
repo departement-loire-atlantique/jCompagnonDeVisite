@@ -18,3 +18,6 @@
 # channel.less.plugins/{Name}/css/plugin.css:    plugins/{Name}/css/plugin.less
 
 rest.data.require-logged-member: false
+
+# 
+$jcmsplugin.compagnonDeVisite.espace.cat.root.chooser-category:

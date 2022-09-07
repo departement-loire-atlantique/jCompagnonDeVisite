@@ -12,7 +12,7 @@
     <field name="visuel" editor="image" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Visuel</label>
     </field>
-    <field name="thematique" editor="category" required="true" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="j_3" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true" displayRoot="false">
+    <field name="thematique" editor="category" required="true" compactDisplay="false" type="java.util.TreeSet" chooser="tree" exclusive="true" root="$jcmsplugin.compagnonDeVisite.espace.cat.root" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true" displayRoot="false">
       <label xml:lang="fr">Thématique</label>
     </field>
     <field name="plan" editor="image" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
