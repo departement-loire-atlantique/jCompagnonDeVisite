@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<type name="OeuvreExplore" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="false" workflowTab="true" advancedTab="true" hbm="true" revision="true" categories="">
+<type name="Oeuvre" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="false" workflowTab="true" advancedTab="true" hbm="true" categories="" authgroups="||">
   <title ml="true">
     <label xml:lang="fr">Titre</label>
     <label xml:lang="en">Title</label>
@@ -25,6 +25,6 @@
       <label xml:lang="fr">Indications</label>
     </field>
   </fields>
-  <label xml:lang="fr">Oeuvre Explore</label>
+  <label xml:lang="fr">Oeuvre</label>
 </type>
 
