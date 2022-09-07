@@ -27,6 +27,9 @@
     <field name="indications" editor="link" required="false" compactDisplay="false" type="generated.ListeDeContenus" parent="false">
       <label xml:lang="fr">Indications</label>
     </field>
+    <field name="plan" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" descriptionType="tooltip" html="false" mediaTypes="IMAGE" checkHtml="true">
+      <label xml:lang="fr">Plan</label>
+    </field>
   </fields>
   <label xml:lang="fr">Oeuvre</label>
 </type>
