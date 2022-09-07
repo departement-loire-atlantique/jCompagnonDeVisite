@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<type name="Indication" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="true" workflowTab="true" advancedTab="true" database="true" hbm="true" revision="true">
-  <label xml:lang="fr">Indication</label>
+<type name="Indication" superclass="com.jalios.jcms.Content" debatable="false" unitFieldEdition="true" audienced="false" categoryTab="true" readRightTab="true" updateRightTab="true" templateTab="false" workflowTab="true" advancedTab="true" hbm="true" revision="true" categories="">
   <title ml="true">
     <label xml:lang="en">Title</label>
     <label xml:lang="fr">Titre</label>
@@ -10,5 +9,6 @@
       <label xml:lang="fr">Icon</label>
     </field>
   </fields>
+  <label xml:lang="fr">Indication</label>
 </type>
 
