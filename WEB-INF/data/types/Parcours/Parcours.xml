@@ -38,6 +38,9 @@
     <field name="ordre" editor="int" required="false" compactDisplay="false" type="int" default="0">
       <label xml:lang="fr">Ordre</label>
     </field>
+    <field name="video" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" descriptionType="tooltip" html="false" mediaTypes="VIDEO" checkHtml="true">
+      <label xml:lang="fr">Video</label>
+    </field>
   </fields>
   <label xml:lang="fr">Parcours</label>
 </type>

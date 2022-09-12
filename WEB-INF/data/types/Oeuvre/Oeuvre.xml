@@ -30,6 +30,9 @@
     <field name="indications" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true">
       <label xml:lang="fr">Indications</label>
     </field>
+    <field name="video" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" descriptionType="tooltip" html="false" mediaTypes="VIDEO" checkHtml="true">
+      <label xml:lang="fr">Video</label>
+    </field>
   </fields>
   <label xml:lang="fr">Oeuvre</label>
 </type>
