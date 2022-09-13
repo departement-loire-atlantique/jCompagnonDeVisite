@@ -111,9 +111,8 @@
   </types>
  -->
  <types>
-    <type name="PointDinteret" />
     <type name="Parcours" />
-    <type name="OeuvreExplore" />
+    <type name="Oeuvre" />
     <type name="Indication" />
  </types>
   <!-- ============================== Workflows =========================== -->
@@ -449,5 +448,9 @@
     <directory path="images" />
     -->
   </public-files>
+  <webapp-files>
+    <!-- TODO Sup socle for 10sp5 + -->
+    <file path="jcore/doEmptyFooter.jspf" />
+  </webapp-files>
 </plugin>
 
