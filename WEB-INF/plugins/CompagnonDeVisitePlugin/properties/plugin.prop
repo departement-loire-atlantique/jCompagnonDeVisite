@@ -21,3 +21,4 @@ rest.data.require-logged-member: false
 
 # 
 $jcmsplugin.compagnonDeVisite.espace.cat.root.chooser-category:
+extra.Category.compagnonDeVisite.exposition.display.boolean: false
