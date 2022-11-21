@@ -33,6 +33,9 @@
     <field name="video" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" descriptionType="tooltip" html="false" mediaTypes="VIDEO" checkHtml="true">
       <label xml:lang="fr">Video</label>
     </field>
+    <field name="numeroDeLoeuvre" editor="textfield" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="false" html="false" checkHtml="true">
+      <label xml:lang="fr">Numéro de l'oeuvre</label>
+    </field>
   </fields>
   <label xml:lang="fr">Oeuvre</label>
 </type>
