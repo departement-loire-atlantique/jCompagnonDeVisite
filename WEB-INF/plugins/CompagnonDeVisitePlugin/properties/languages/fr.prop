@@ -2,3 +2,7 @@
 # 
 $jcmsplugin.compagnonDeVisite.espace.cat.root: Catégorie racine des thématiques des espaces
 extra.Category.compagnonDeVisite.exposition.display: Afficher l'exposition ?
+
+# Documentation
+doc.rest.rsrc-meth.CategoryChildren: GET
+doc.rest.rsrc-desc./plugins/compagnondevisite/category/children/{catId}: Recherche les catégories enfants.
