@@ -41,6 +41,9 @@
     <field name="video" editor="media" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" descriptionType="tooltip" html="false" mediaTypes="VIDEO" checkHtml="true">
       <label xml:lang="fr">Video</label>
     </field>
+    <field name="transcription" editor="wysiwyg" required="false" compactDisplay="false" type="String" searchable="true" rows="16" cols="100" ml="true" wysiwygConfigurationId="" checkHtml="true" inline="true">
+      <label xml:lang="fr">Transcription</label>
+    </field>
     <field name="parcoursPMR" editor="boolean" required="false" compactDisplay="false" type="boolean" default="false" ml="false" descriptionType="tooltip" searchable="false" html="false" checkHtml="true">
       <label xml:lang="fr">Parcours PMR</label>
       <onLabel xml:lang="en">Yes</onLabel>
