@@ -24,3 +24,4 @@ $jcmsplugin.compagnonDeVisite.espace.cat.root.chooser-category:
 extra.Category.compagnonDeVisite.exposition.display.boolean: false
 extra.Category.compagnonDeVisite.lsf.video.chooser-document: 
 extra.Category.compagnonDeVisite.lsf.video.text.area: 
+jcmsplugin.compagnonDeVisite.planPDF:
