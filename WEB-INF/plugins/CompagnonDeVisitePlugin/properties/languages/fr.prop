@@ -1,6 +1,9 @@
 
 # 
 $jcmsplugin.compagnonDeVisite.espace.cat.root: Catégorie racine des thématiques des espaces
+jcmsplugin.compagnonDeVisite.fin-visite.lbl.fr: Texte FR "Merci pour votre visite"
+jcmsplugin.compagnonDeVisite.fin-visite.lbl.en: Texte EN "Merci pour votre visite"
+
 extra.Category.compagnonDeVisite.exposition.display: Afficher l'exposition ?
 extra.Category.compagnonDeVisite.lsf.video: Video LSF
 extra.Category.compagnonDeVisite.lsf.video.text: Video LSF transcription

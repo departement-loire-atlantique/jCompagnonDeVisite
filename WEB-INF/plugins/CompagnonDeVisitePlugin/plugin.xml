@@ -226,7 +226,10 @@
   <openapi>
     <resource class="com.example.jcmsplugin.jcompagnondevisite.JCompagnonDeVisiteResource" uriTemplate="/plugins/jcompagnondevisite/resourceName/{param1}/{param2}" />
   </openapi>
--->
+-->                                                    
+  <openapi>
+    <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.PropApi" uriTemplate="/plugins/compagnon/prop/{prop}" />
+  </openapi>
 <!--
 <openapi>
     <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.CategoryChildren" uriTemplate="/plugins/compagnondevisite/category/children/{id}" />
