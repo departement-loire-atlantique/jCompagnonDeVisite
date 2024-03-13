@@ -5,6 +5,9 @@
     <label xml:lang="en">Title</label>
   </title>
   <fields>
+    <field name="titreAffiche" editor="textfield" required="false" compactDisplay="false" type="String" searchable="true" size="80" ml="true" html="false" checkHtml="true">
+      <label xml:lang="fr">Titre affiché</label>
+    </field>
     <field name="titreCourt" editor="textfield" required="true" compactDisplay="false" type="String" searchable="true" size="80" ml="true" html="false" checkHtml="true" descriptionType="tooltip">
       <label xml:lang="fr">Titre court</label>
     </field>
