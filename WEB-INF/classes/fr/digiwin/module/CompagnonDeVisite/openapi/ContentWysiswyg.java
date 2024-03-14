@@ -72,7 +72,7 @@ public class ContentWysiswyg extends DataCollectionRestResource {
       String contenuJalios = ficheArticle.getContenuParagraphe()[0];
       String formatWysiswyg = WysiwygRenderer.processWysiwyg(contenuJalios, CHANNEL.getCurrentUserLocale());
 
-      formatWysiswyg = processWysiwygImage(formatWysiswyg);
+      //formatWysiswyg = processWysiwygImage(formatWysiswyg);
       try {
         result.put("title", ficheArticle.getTitle());
         result.put("content", formatWysiswyg);
@@ -95,9 +95,17 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     Matcher matcherSrc = patternSrc.matcher(contenu);
     String found = null;
     while(matcherSrc.find()) {
+<<<<<<< HEAD
       found = matcherSrc.group(2);
+=======
+      LOGGER.debug("Found image tag");
+>>>>>>> branch 'master' of https://nantes.trsb.net/gitlab/cd44/GP/JCompagnonDeVisite.git
       if (LOGGER.isTraceEnabled()) {
+<<<<<<< HEAD
         LOGGER.trace("Matcher: " + found);
+=======
+        LOGGER.trace("Matcher: " + matcherSrc.group(2));
+>>>>>>> branch 'master' of https://nantes.trsb.net/gitlab/cd44/GP/JCompagnonDeVisite.git
       }
     }
     if (Util.notEmpty(found)) {
