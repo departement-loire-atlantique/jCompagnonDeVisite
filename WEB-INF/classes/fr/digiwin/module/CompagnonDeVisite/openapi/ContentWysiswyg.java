@@ -98,10 +98,9 @@ public class ContentWysiswyg extends DataCollectionRestResource {
       found = matcherSrc.group(2);
       if (LOGGER.isTraceEnabled()) {
         LOGGER.trace("Matcher: " + found);
+        LOGGER.trace("URL: " + CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
       }
-    }
-    if (Util.notEmpty(found)) {
-      contenu = Util.replaceAll(contenu,  found, CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
+      contenu = Util.replace(contenu, found, CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
     }
     return contenu;
   }
