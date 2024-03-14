@@ -31,7 +31,6 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     String idParam = (String) req.getAttributes().get("id");
     this.data = this.channel.getData(idParam);
     
-    
     if (Util.isEmpty(this.data)) {
       res.setStatus(Status.CLIENT_ERROR_NOT_FOUND, "Unknown param");
       return;
@@ -94,11 +93,15 @@ public class ContentWysiswyg extends DataCollectionRestResource {
   private String processWysiwygImage(String contenu) {
     Pattern patternSrc = Pattern.compile("<img\\s+(?:[^>]*?\\s+)?src=([\"'])(.*?)\\1");
     Matcher matcherSrc = patternSrc.matcher(contenu);
+    String found = null;
     while(matcherSrc.find()) {
+      found = matcherSrc.group(2);
       if (LOGGER.isTraceEnabled()) {
-        LOGGER.trace("Found image tag " + matcherSrc.group(2));
+        LOGGER.trace("Matcher: " + found);
       }
-      contenu = Util.replace(contenu,  matcherSrc.group(2), CHANNEL.getCurrentJcmsContext().getBaseUrl() + matcherSrc.group(2));
+    }
+    if (Util.notEmpty(found)) {
+      contenu = Util.replaceAll(contenu,  found, CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
     }
     return contenu;
   }
