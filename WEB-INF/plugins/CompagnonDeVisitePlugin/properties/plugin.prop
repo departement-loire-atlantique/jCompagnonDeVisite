@@ -21,15 +21,6 @@ rest.data.require-logged-member: false
 
 # 
 $jcmsplugin.compagnonDeVisite.espace.cat.root.chooser-category:
-jcmsplugin.compagnonDeVisite.fin-visite.lbl.fr:
-jcmsplugin.compagnonDeVisite.fin-visite.lbl.en:
-
 extra.Category.compagnonDeVisite.exposition.display.boolean: false
 extra.Category.compagnonDeVisite.lsf.video.chooser-document: 
-extra.Category.compagnonDeVisite.lsf.video.text.area: 
-jcmsplugin.compagnonDeVisite.planPDF:
-
-# prop accessible publiquement
-jcmsplugin.compagnonDeVisite.prop.public:\
-jcmsplugin.compagnonDeVisite.fin-visite.lbl.fr \
-jcmsplugin.compagnonDeVisite.fin-visite.lbl.en \
+extra.Category.compagnonDeVisite.lsf.video.text.area:

@@ -7,7 +7,8 @@ jcmsplugin.compagnonDeVisite.fin-visite.lbl.en: Texte EN "Merci pour votre visit
 extra.Category.compagnonDeVisite.exposition.display: Afficher l'exposition ?
 extra.Category.compagnonDeVisite.lsf.video: Video LSF
 extra.Category.compagnonDeVisite.lsf.video.text: Video LSF transcription
-jcmsplugin.compagnonDeVisite.planPDF: Menu burger - Id du media du plan PDF
 # Documentation
 doc.rest.rsrc-meth.CategoryChildren: GET
 doc.rest.rsrc-desc./plugins/compagnondevisite/category/children/{catId}: Recherche les catégories enfants.
+doc.rest.rsrc-meth.ContentWysiswyg: GET
+doc.rest.rsrc-desc./plugins/compagnondevisite/content/{id}: FicheArticle: Convertit le titre et le champ wysiswyg "Contenu paragraphe" en JSON.
