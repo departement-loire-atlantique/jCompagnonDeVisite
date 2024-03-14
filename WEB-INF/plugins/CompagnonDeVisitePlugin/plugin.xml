@@ -229,15 +229,9 @@
 -->                                                    
   <openapi>
     <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.PropApi" uriTemplate="/plugins/compagnon/prop/{prop}" />
-  </openapi>
-<!--
-<openapi>
-    <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.CategoryChildren" uriTemplate="/plugins/compagnondevisite/category/children/{id}" />
-</openapi>
--->
-<openapi>
     <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.ContentWysiswyg" uriTemplate="/plugins/compagnondevisite/content/{id}" />
-</openapi>
+  </openapi>
+
   <!-- ===================== Private/Public/Webapp files ================== -->
   <!--                                                                      -->
   <!-- Plugin's files can be deployed in 3 locations:                       -->

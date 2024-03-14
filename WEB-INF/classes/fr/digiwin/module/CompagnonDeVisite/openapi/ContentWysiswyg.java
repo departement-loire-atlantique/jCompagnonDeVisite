@@ -71,9 +71,7 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     FicheArticle ficheArticle = (FicheArticle)this.data;
     if (Util.notEmpty(ficheArticle.getContenuParagraphe())) {
       String contenuJalios = ficheArticle.getContenuParagraphe()[0];
-      LOGGER.debug("contenuJalios " + contenuJalios);
       String formatWysiswyg = WysiwygRenderer.processWysiwyg(contenuJalios, CHANNEL.getCurrentUserLocale());
-      LOGGER.debug("formatWysiswyg " + formatWysiswyg);
 
       formatWysiswyg = processWysiwygImage(formatWysiswyg);
       try {
