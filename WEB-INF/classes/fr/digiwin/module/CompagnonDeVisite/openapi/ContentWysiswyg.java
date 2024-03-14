@@ -31,7 +31,6 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     String idParam = (String) req.getAttributes().get("id");
     this.data = this.channel.getData(idParam);
     
-    
     if (Util.isEmpty(this.data)) {
       res.setStatus(Status.CLIENT_ERROR_NOT_FOUND, "Unknown param");
       return;
@@ -73,7 +72,7 @@ public class ContentWysiswyg extends DataCollectionRestResource {
       String contenuJalios = ficheArticle.getContenuParagraphe()[0];
       String formatWysiswyg = WysiwygRenderer.processWysiwyg(contenuJalios, CHANNEL.getCurrentUserLocale());
 
-      formatWysiswyg = processWysiwygImage(formatWysiswyg);
+      //formatWysiswyg = processWysiwygImage(formatWysiswyg);
       try {
         result.put("title", ficheArticle.getTitle());
         result.put("content", formatWysiswyg);
@@ -95,8 +94,9 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     Pattern patternSrc = Pattern.compile("<img\\s+(?:[^>]*?\\s+)?src=([\"'])(.*?)\\1");
     Matcher matcherSrc = patternSrc.matcher(contenu);
     while(matcherSrc.find()) {
+      LOGGER.debug("Found image tag");
       if (LOGGER.isTraceEnabled()) {
-        LOGGER.trace("Found image tag " + matcherSrc.group(2));
+        LOGGER.trace("Matcher: " + matcherSrc.group(2));
       }
       contenu = Util.replace(contenu,  matcherSrc.group(2), CHANNEL.getCurrentJcmsContext().getBaseUrl() + matcherSrc.group(2));
     }
