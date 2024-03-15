@@ -114,6 +114,7 @@
     <type name="Parcours" />
     <type name="Oeuvre" />
     <type name="Indication" />
+    <type name="MenuBurger" />
  </types>
   <!-- ============================== Workflows =========================== -->
   <!--                                                                      -->
@@ -229,7 +230,6 @@
 -->                                                    
   <openapi>
     <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.PropApi" uriTemplate="/plugins/compagnon/prop/{prop}" />
-    <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.ContentWysiswyg" uriTemplate="/plugins/compagnondevisite/content/{id}" />
   </openapi>
 
   <!-- ===================== Private/Public/Webapp files ================== -->
