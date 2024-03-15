@@ -95,12 +95,14 @@ public class ContentWysiswyg extends DataCollectionRestResource {
     Matcher matcherSrc = patternSrc.matcher(contenu);
     String found = null;
     while(matcherSrc.find()) {
-      found = matcherSrc.group(2);
-      if (LOGGER.isTraceEnabled()) {
-        LOGGER.trace("Matcher: " + found);
-        LOGGER.trace("URL: " + CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
+      if( matcherSrc.groupCount() >= 2) {
+        found = matcherSrc.group(2);
+        if (LOGGER.isTraceEnabled()) {
+          LOGGER.trace("Matcher: " + found);
+          LOGGER.trace("URL: " + CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
+        }
+        contenu = Util.replace(contenu, found, CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
       }
-      contenu = Util.replace(contenu, found, CHANNEL.getCurrentJcmsContext().getBaseUrl() + found);
     }
     return contenu;
   }
