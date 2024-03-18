@@ -1,10 +1,12 @@
 
 # 
 $jcmsplugin.compagnonDeVisite.espace.cat.root: Catégorie racine des thématiques des espaces
+jcmsplugin.compagnonDeVisite.fin-visite.lbl.fr: Texte FR "Merci pour votre visite"
+jcmsplugin.compagnonDeVisite.fin-visite.lbl.en: Texte EN "Merci pour votre visite"
+
 extra.Category.compagnonDeVisite.exposition.display: Afficher l'exposition ?
 extra.Category.compagnonDeVisite.lsf.video: Video LSF
 extra.Category.compagnonDeVisite.lsf.video.text: Video LSF transcription
-
 # Documentation
 doc.rest.rsrc-meth.CategoryChildren: GET
 doc.rest.rsrc-desc./plugins/compagnondevisite/category/children/{catId}: Recherche les catégories enfants.

@@ -43,7 +43,7 @@
 <!--                    unless you need to override default behavior      -->
 <!--                    [com.example.Plugin]                              -->
 <!--                                                                      -->
-<plugin name="CompagnonDeVisitePlugin" version="0.1" author="Digiwin" license="Digiwin" initialize="true" jcms="" order="0" url="" jsync="false" appserver="">
+<plugin name="CompagnonDeVisitePlugin" version="1.0.0" author="Digiwin" license="Digiwin" initialize="true" jcms="" order="0" url="" jsync="false" appserver="">
   <!-- ======================== Label and Descriptions ==================== -->
   <!--                                                                      -->
   <!-- Plugin's label and description.  Because JCMS is multilingual,       -->
@@ -114,6 +114,7 @@
     <type name="Parcours" />
     <type name="Oeuvre" />
     <type name="Indication" />
+    <type name="MenuBurger" />
  </types>
   <!-- ============================== Workflows =========================== -->
   <!--                                                                      -->
@@ -226,12 +227,11 @@
   <openapi>
     <resource class="com.example.jcmsplugin.jcompagnondevisite.JCompagnonDeVisiteResource" uriTemplate="/plugins/jcompagnondevisite/resourceName/{param1}/{param2}" />
   </openapi>
--->
-<!--
-<openapi>
-    <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.CategoryChildren" uriTemplate="/plugins/compagnondevisite/category/children/{id}" />
-</openapi>
--->
+-->                                                    
+  <openapi>
+    <resource class="fr.digiwin.module.CompagnonDeVisite.openapi.PropApi" uriTemplate="/plugins/compagnon/prop/{prop}" />
+  </openapi>
+
   <!-- ===================== Private/Public/Webapp files ================== -->
   <!--                                                                      -->
   <!-- Plugin's files can be deployed in 3 locations:                       -->
@@ -458,4 +458,3 @@
     <file path="jcore/doEmptyFooter.jspf" />
   </webapp-files>
 </plugin>
-
